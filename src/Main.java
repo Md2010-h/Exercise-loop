@@ -54,14 +54,22 @@ string: xof nworb kciuq ehT
 through the keyboard.
 
      */
+    //
     System.out.println("Enter the number for print factorial of it");
     int number = input.nextInt();
     long fact = 1;
+
+    while(number < 0){
+        System.out.println("do not enter negative number please enter another number");
+        number = input.nextInt();
+    }
 
     for (int i = 1; i <= number; i++) {
         fact = fact * i;
     }
     System.out.println("Factorial of: " + fact);
+
+
 
 
     // End question 3
